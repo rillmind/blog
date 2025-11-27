@@ -1,0 +1,11 @@
+FROM oven/bun
+
+WORKDIR /app
+
+COPY . .
+
+EXPOSE 5173
+
+RUN bun i --verbose
+
+CMD ["bun", "dev"]
