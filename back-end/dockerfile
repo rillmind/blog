@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 2306
 
-RUN go build -o main ./cmd
+# RUN go build -o main ./cmd
 
-CMD ["./main"]
+CMD ["go", "run", "./cmd"]
