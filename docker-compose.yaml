@@ -1,0 +1,31 @@
+services:
+  db:
+    container_name: db
+    image: postgres:12
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    container_name: api
+    image: goapi
+    build: ./back-end
+    ports:
+      - "2306:2306"
+    depends_on:
+      - db
+
+  front:
+    container_name: front
+    image: front
+    build: ./front-end
+    ports:
+      - "5173:2207"
+
+volumes:
+  pgdata: {}
