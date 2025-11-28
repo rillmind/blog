@@ -1,0 +1,53 @@
+@import url("./Global.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 79.6vh;
+  width: 100vw;
+
+  color: var(--mocha-text);
+  background-color: var(--mocha-base);
+}
+
+.main .textSession1 {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Roboto Serif", serif;
+  text-align: left;
+  hyphens: auto;
+
+  gap: 1.5rem;
+  min-width: 600px;
+  width: 32vw;
+  margin: 1rem;
+}
+
+.main .textSession1 .externalLinks {
+  text-decoration: none;
+
+  color: var(--mocha-yellow);
+}
+
+.main .textSession1 .externalLinks:hover {
+  text-decoration: underline;
+  color: var(--mocha-peach);
+}
+
+.main .textSession2 {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Roboto Serif", serif;
+  text-align: right;
+  hyphens: auto;
+
+  gap: 1.5rem;
+  min-width: 600px;
+  width: 32vw;
+  margin: 1rem;
+}
