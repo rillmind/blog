@@ -1,6 +1,10 @@
 package main
 
 import (
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
 	"github.com/rillmind/apiGin/auth"
 	"github.com/rillmind/apiGin/product"
 	"github.com/rillmind/apiGin/user"
@@ -11,6 +15,10 @@ import (
 
 func main() {
 	server := gin.Default()
+
+	if err := godotenv.Load(); err != nil {
+		log.Println("Aviso: Arquivo .env não encontrado, usando variáveis de ambiente do sistema.")
+	}
 
 	port := os.Getenv("PORT")
 
