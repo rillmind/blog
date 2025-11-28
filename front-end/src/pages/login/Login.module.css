@@ -1,0 +1,71 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 93vh;
+  width: 100%;
+
+  color: var(--mocha-text);
+  background-color: var(--mocha-base);
+}
+
+.main .loginBox {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+  padding: 2rem; /* Espaçamento interno fixo (32px) */
+  gap: 1.5rem; /* Espaço entre os grupos (Input Email / Senha) */
+  border-radius: 10px;
+
+  background-color: var(--mocha-surface0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main .loginBox .login,
+.main .loginBox .password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.main .loginBox .login label,
+.main .loginBox .password label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.main .loginBox .login input,
+.main .loginBox .password input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  border: none;
+  color: var(--mocha-text);
+  background-color: var(--mocha-mantle);
+}
+
+.main .loginBox .login input:focus,
+.main .loginBox .password input:focus {
+  outline: 2px solid var(--mocha-mauve);
+}
+
+.main .loginBox .buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.8rem 2rem; /* Botão com tamanho baseado no texto */
+  border-radius: 0.5em;
+  font-weight: bold;
+  background-color: var(--mocha-mauve);
+  color: var(--mocha-base); /* Contraste melhor para o texto do botão */
+  text-decoration: none;
+  margin-top: 1rem;
+}
