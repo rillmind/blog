@@ -6,6 +6,6 @@ COPY . .
 
 EXPOSE 2306
 
-# RUN go build -o main ./cmd
+RUN go build -o server ./cmd
 
-CMD ["go", "run", "./cmd"]
+CMD ["./server"]
