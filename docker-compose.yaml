@@ -25,7 +25,7 @@ services:
     image: front
     build: ./front-end
     ports:
-      - "5173:2207"
+      - "2207:2207"
 
 volumes:
   pgdata: {}

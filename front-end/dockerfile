@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 5173
+EXPOSE 2207
 
 RUN bun i --verbose
 

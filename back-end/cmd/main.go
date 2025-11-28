@@ -12,6 +12,12 @@ import (
 func main() {
 	server := gin.Default()
 
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "2306"
+	}
+
 	dbConnection, err := db.Connect()
 	if err != nil {
 		panic(err)
@@ -35,5 +41,5 @@ func main() {
 
 	product.RegisterRoutes(server, &productController)
 
-	server.Run(":2306")
+	server.Run(":" + port)
 }
