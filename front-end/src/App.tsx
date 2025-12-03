@@ -1,6 +1,7 @@
 import "./Global.css";
 import Header from "./components/header/Header";
 import styles from "./App.module.css";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
