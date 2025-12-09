@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rillmind/apiGin/response"
+	"github.com/rillmind/blog/back-end/response"
 )
 
 type Controller struct {

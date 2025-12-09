@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/rillmind/apiGin/user"
+	"github.com/rillmind/blog/back-end/user"
 )
 
 type Repository struct {

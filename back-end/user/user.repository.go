@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/rillmind/apiGin/hash"
+	"github.com/rillmind/blog/back-end/hash"
 )
 
 type Repository struct {

@@ -3,8 +3,8 @@ package auth
 import (
 	"errors"
 
-	"github.com/rillmind/apiGin/hash"
-	"github.com/rillmind/apiGin/jwt"
+	"github.com/rillmind/blog/back-end/hash"
+	"github.com/rillmind/blog/back-end/jwt"
 )
 
 type Service struct {
