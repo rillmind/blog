@@ -11,9 +11,9 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  api:
-    container_name: api
-    image: goapi
+  back:
+    container_name: back
+    image: back
     build: ./back-end
     ports:
       - "2306:2306"
