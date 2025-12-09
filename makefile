@@ -1,5 +1,6 @@
 # b = back-end
 b:
+	@go -C ./back-end run ./cmd
 
 # fi = front-install
 fi:
