@@ -4,6 +4,8 @@ import styles from "./App.module.css";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  // Adicionar o botão para criar post se o dono do blog estiver logado.
+  // if token.role == owner { <AddPost /> }
   return (
     <>
       <Header />

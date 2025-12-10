@@ -1,7 +1,11 @@
-.main {
+main {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 
-  min-height: 79.6vh;
+  gap: 0.5rem;
+  min-width: 600px;
+  min-height: 7vh;
+  width: 100vw;
 }
