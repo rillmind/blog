@@ -1,6 +1,6 @@
 # apiGin
 
-Esse projeto é uma api onde eu usarei para colocar em prática os meus conhecimentos que eu aprenderei estudando Go.
+Esse projeto é uma api onde eu usarei para colocar em prática os meus conhecimentos que eu aprendi estudando Go.
 
 ## Pré-requisitos
 
